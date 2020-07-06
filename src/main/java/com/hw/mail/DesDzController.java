@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class DesDzController {
-    Logger logger = Logger.getLogger(SendMailController.class);
+    Logger logger = Logger.getLogger(DesDzController.class);
 
     @PostMapping("/api/encryptfp")
     public ResponseEntity<?> encrypt(@RequestBody String str_body) {
-        String str=DESDZFP.encrypt(str_body);
+        String str= DESDZFP.encrypt(str_body);
 
         return new ResponseEntity(str , new HttpHeaders(), HttpStatus.OK);
     }

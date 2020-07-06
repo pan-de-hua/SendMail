@@ -56,6 +56,6 @@
 	<root level="INFO">
 		<appender-ref ref="FILE" />
 	</root>
-	<logger name="com.hw" level="error" />
+	<logger name="com.hw.mail" level="error" />
 	<logger name="org.springframework.web" level="error" />
 </configuration>
